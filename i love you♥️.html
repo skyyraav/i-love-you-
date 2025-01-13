@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #ff6f61, #ff9e80);
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            text-align: center;
+            color: #fff;
+        }
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            animation: glow 2s infinite alternate;
+        }
+        p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+        .heart {
+            color: red;
+            font-size: 5rem;
+            animation: beat 1s infinite;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px #ff9e80, 0 0 10px #ff6f61, 0 0 20px #ff9e80;
+            }
+            to {
+                text-shadow: 0 0 20px #ff6f61, 0 0 30px #ff9e80, 0 0 40px #ff6f61;
+            }
+        }
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I Love You</h1>
+        <div class="heart">❤️</div>
+        <p>You're my everything!</p>
+    </div>
+</body>
+</html>
